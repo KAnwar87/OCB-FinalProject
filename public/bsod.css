@@ -1,0 +1,59 @@
+body {
+    background-color: #0414a7;
+}
+
+/* Container Styles */
+.container {
+width: 90%;
+margin: auto;
+max-width: 640px;
+font-family: 'Courier New', Courier, monospace;
+color: #fff;
+}
+
+/* BSOD Styles */
+.bsod {
+    padding-top: 10%;
+
+/* Negative Styles */
+.neg {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #0414a7;
+
+/* Background Styles */
+.bg {
+    background: #aaaaaa;
+    padding: 0 15px 2px 13px;
+    }
+}
+
+/* Title Styles */
+.title {
+    margin-bottom: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+/* Navigation Styles */
+.nav {
+    margin-top: 35px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+    /* Link Styles */
+    .link {
+        font-family: 'Courier New', Courier, monospace;
+        text-decoration: none;
+        padding: 0 9px 2px 8px;
+        color: #fff;
+        
+        &:hover,
+        &:focus {
+        background: #aaaaaa;
+        color: #fff;
+        }
+    }
+}
+}

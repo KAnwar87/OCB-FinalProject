@@ -1,0 +1,52 @@
+.secondHeader {
+  display: flex;
+  justify-content: space-between;
+  background-color: aliceblue;
+  height: 30px;
+  color: green;
+}
+
+.leftsidemenu {
+  color: aliceblue;
+}
+
+.rightsidemenu {
+  display: inline-block;
+  padding: 0 15px;
+  font-size: larger;
+}
+
+.greet {
+  color:green;
+  float: left;
+  font-size: medium;
+}
+
+a:hover {
+  color: yellowgreen;
+}
+
+.summaryContainer {
+  margin: 0rem 1rem 1rem 1rem;
+  padding: 0rem 2rem 2rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.summaryItem {
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  flex-grow: 1;
+  flex-basis: 200;
+  justify-content:space-evenly;
+}
+
+.summaryHr {
+  height: 5px;
+  width: 80px;
+  margin: auto;
+}
+
+.textAlignCenter {
+  text-align:center
+}

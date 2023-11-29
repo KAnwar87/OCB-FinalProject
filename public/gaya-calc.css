@@ -1,0 +1,43 @@
+.centerwrap { 
+    margin: auto;
+    padding: 15px;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    right: 10%;
+    border-radius: 15px;    
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    text-align: center;
+    transition: 0.3s all ease;
+}   
+
+/* .parent {
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+  .child {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+  }
+
+  .top_align {
+    vertical-align: top;
+  } */
+
+.wrapdiv { 
+  margin: 50px;
+  padding: 15px;
+  position: absolute;
+  /* top: 5%; */
+  left: 10%;
+  right: 10%;
+  border-radius: 15px;    
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  text-align: center;
+  transition: 0.3s all ease;
+}   
+

@@ -1,0 +1,285 @@
+/* BODY AND NAV LINK, HOVER ELEMENT */
+
+body {
+    background-color:#556b2f
+}
+
+nav {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a:link {
+    color: white;
+    font-weight:500;
+    text-decoration: none;
+    cursor: pointer;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+    color: black;
+    /* font-weight:bold; */
+    background-color: wheat;
+    /* border: 3px solid wheat; */
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#other_link:hover {
+    color: white;
+    font-weight:bold;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.55);
+    /* hover-color: rgba(255, 255, 255, 0.75); */
+
+
+}
+
+/* FLEX CONTAINER */
+
+.main{
+    padding: 30px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.box {
+    flex-grow: 1;
+}
+#box_gambar {
+    flex-basis: 30%;
+    text-align: right;
+    padding-right: 1%;
+}
+
+#box_nama {
+    flex-basis: 60%;
+    text-align: left;
+    padding-left: 1%;
+}
+
+#box_developer {
+    margin-top: 0px;
+    text-align: center;
+}
+
+#box_language {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.container_edu_project {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#box_degree, #box_stpm, #box_spm, #box_projects {
+    flex-basis: 30%;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-align: center;
+    
+}
+
+
+/* BULLET, ICON, HR, PAGE TITLE */
+
+ul.nobullets {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    columns: 2;
+}
+
+.fa-brands, .fa-solid {
+    color:mediumturquoise
+}
+
+hr {
+    height: 2px;
+    background-color: white;
+    border-color: white;
+    margin: 25px;
+}
+
+.page_title {
+    color:azure;
+    font-size:x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    }
+
+.position {
+    text-transform: uppercase;
+}
+
+
+/* MAIN SECTION */
+
+.GambarKA {
+    width: 200px;
+    height: 200px;
+    border-radius: 40%;
+    object-fit: cover ;
+}
+
+#nama_ka {
+    color: azure;
+    font-size: 48px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 0.75em;
+}
+
+#nama_khairul {
+    color: azure;
+    font-size: 48px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#nama_anwar {
+    color: azure;
+    font-size: 48px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about_me {
+    color: cornsilk;
+    font-size:larger;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px 20px;
+}
+
+.contact_me p {
+    display: inline-block;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.contact_type {
+    color:azure;
+    font-size: 18px;
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 40%;
+    padding-right: 1%;
+}
+
+.contact_info, #other_link:any-link {
+    color:cornsilk;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    width: 40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* PROFESSIONAL EXPERIENCE */
+
+.pengalaman_kerja {
+    color:wheat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    margin: 2px 25%;
+    padding: 10px;
+}
+
+.position {
+    color:paleturquoise;
+}
+
+/* summary {
+    font-weight: bold;
+} */
+
+details[open] {
+    color: wheat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    background-color:#486a55;
+    border-radius: 20px;
+    border-style:outset;
+    padding: 10px;
+
+}
+
+details[open] summary {
+    border-bottom: 2px dashed grey;
+}
+
+
+/* SKILLS */
+
+.language p {
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+.lang_name {
+    color:azure;
+    text-align: right;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 1%;
+}
+
+.lang_level {
+    color:wheat;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 1%;
+}
+
+
+/* EDUCATION & PROJECT */
+
+.skills_category, .study, .client_name, .website, .info {
+    color: paleturquoise;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.dev_skills_list, .institution, .grade, .info {
+    color:wheat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.dev_skills_list {
+    font-weight: bold;
+}
+
+.web_images {
+    border: 3px solid gainsboro;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 35px;
+    color:wheat;
+    text-align: center;
+    font-size: xx-small;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+

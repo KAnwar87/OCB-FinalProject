@@ -1,0 +1,20 @@
+<div class="userGreet">
+  <div class="greetLeftSide">
+    <% if (messages.length > 0 && key === 'flashLoginSuccessful') { %>
+    <div class="flash-messages">
+      <span>Welcome, </span>
+      <span style="font-weight: bold"><%= username %></span>
+    </div>
+    <% } else if (messages.length > 0 && key === 'XXX') { %>
+    <div class="flash-messages">
+      <% messages.forEach(message => { %> <%= message %> <% }); %>
+    </div>
+    <% } else { %>
+    <span>  </span>
+    <% } %>
+  </div>
+
+  <div class="greetRightSide">
+    <!-- <span>Last login: 2023-11-05 15:30</span> -->
+  </div>
+</div>

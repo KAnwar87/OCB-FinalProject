@@ -1,0 +1,27 @@
+{
+  "name": "ocb-final-project",
+  "version": "1.0.0",
+  "description": "Online Coding Bootcamp Final Project by Khairul Anwar bin Zainuddin",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "Khairul Anwar",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.2",
+    "method-override": "^3.0.0",
+    "nodemon": "^3.0.1",
+    "pg": "^8.11.3",
+    "yarn": "^1.22.21"
+  }
+}

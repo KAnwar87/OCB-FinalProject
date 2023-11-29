@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../components/head.ejs') %>
+    <!-- <link rel="stylesheet" type="text/css" href="gaya-table.css" /> -->
+  </head>
+  <body>
+    <%- include('../components/menu.ejs') %> <%-
+    include('../components/greetUser.ejs') %>
+
+    <h3>PINDA REKOD KENDERAAN</h3>
+    <span class="badge badge-pill bg-warning" style="color: black"
+      >Update : PUT Method</span
+    >
+
+    <CONTENT>
+      <div class="roadtax-div container-sm">
+        <form class="contentAlignCenter" action="/roadtax-put?_method=PUT" method="post">
+          <% data.forEach(entry => { %>
+          <div class="row">
+            <div class="col">
+              <input type="hidden" name="id" value="<%= entry.id %>" />
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="reg_no"
+                  name="reg_no"
+                  placeholder="No Pendaftaran"
+                  value="<%= entry.reg_no %>"
+                  required
+                />
+                <label for="floatingInput">No Pendaftaran</label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="owner_nokp"
+                  name="owner_nokp"
+                  placeholder="No KP"
+                  value="<%= entry.owner_nokp %>"
+                  required
+                />
+                <label for="floatingInput">No KP</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="owner_name"
+                name="owner_name"
+                placeholder="Owner Name"
+                value="<%= entry.owner_name %>"
+                required
+              />
+              <label for="floatingInput">Owner Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="veh_make"
+                  name="veh_make"
+                  placeholder="Pembuat Kenderaan"
+                  value="<%= entry.veh_make %>"
+                  required
+                />
+                <label for="floatingInput">Pembuat Kenderaan</label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="veh_model"
+                  name="veh_model"
+                  placeholder="Model Kenderaan"
+                  value="<%= entry.veh_model %>"
+                  required
+                />
+                <label for="floatingInput">Model Kenderaan</label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="veh_eng_cc"
+                  name="veh_eng_cc"
+                  placeholder="CC Enjin"
+                  value="<%= entry.veh_eng_cc %>"
+                  required
+                />
+                <label for="floatingInput">CC Enjin</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="veh_make" class="form-label">Jenis Kenderaan:</label>
+              <select
+                class="form-select form-select mb-3"
+                aria-label="Jenis Kenderaan"
+                id="veh_type"
+                name="veh_type"
+              >
+                <option disabled value="">Open this select menu</option>
+                <option value="MOTORCYCLE">Motorsikal</option>
+                <option value="CAR">Kereta</option>
+                <option value="OTHERS">Lain-lain</option>
+              </select>
+            </div>
+            <div class="col">
+              <button
+                type="submit"
+                id="submitButton"
+                class="btn btn-warning"
+                name="submit"
+              >
+              <i class="bi bi-pencil-fill"></i>
+                Save
+              </button>
+              <button type="reset" id="resetButton" class="btn btn-secondary">
+                <i class="bi bi-x-octagon"></i>
+                Reset
+              </button>
+            </div>
+          </div>
+          <% }); %>
+        </form>
+      </div>
+    </CONTENT>
+
+    <!-- ^^^ SET ALL CONTENT ABOVE THIS LINE ^^^ -->
+    <!-- vvv SET ALL SCRIPT ONLY BELOW THIS LINE vvv -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="" async defer></script>
+    <%- include('../components/footer.ejs') %>
+  </body>
+</html>

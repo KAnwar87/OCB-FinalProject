@@ -1,0 +1,119 @@
+.centerwrap { 
+    margin: auto;
+    padding: 15px;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    right: 10%;
+    border-radius: 15px;    
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    text-align: center;
+    transition: 0.3s all ease;
+}   
+
+.textAlignCenter {
+  text-align:center
+}
+
+.contentAlignCenter {
+  margin: auto;
+  padding: auto;
+}
+
+.MERNstackBanner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    /* height: 300px; */
+}
+
+.CodeForLife {
+    background-image: url("/CodeForLife.png");
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+.registerPageBackground {
+    background-image: url("/RegisterPageBackground.jpg");
+    opacity: 0.8;
+    display:flex;
+    margin: auto;
+    padding: auto;
+    width: 40%;
+    height: 60%;
+    border-radius: 5%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.parent {
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+  .child {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+  }
+
+  .top_align {
+    vertical-align: top;
+  }
+
+.wrapdiv { 
+  margin: 50px;
+  padding: 15px;
+  position: absolute;
+  /* top: 5%; */
+  left: 10%;
+  right: 10%;
+  border-radius: 15px;    
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  text-align: center;
+  transition: 0.3s all ease;
+}   
+
+.userGreet {
+  display: flex;
+  justify-content: space-between;
+  background-color: aliceblue;
+  /* height: 30px; */
+  /* color: green; */
+}
+
+.greetLeftSide {
+  color:darkcyan;
+  padding: 0 15px;
+}
+
+.greetRightSide {
+  display: inline-block;
+  padding: 0 15px;
+  font-size: small;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 15px;
+  font-size: xx-small;
+  background-color: seashell;
+  color: olive;
+  text-align: center;
+}
+
+.roadtax-div {
+  margin: auto;
+  padding: 25px 10%;
+}

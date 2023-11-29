@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>OCB Project by Khairul Anwar</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/KA-Logo.svg" />
+    <link rel="stylesheet" type="text/css" href="/gaya-temp.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    
+    <<div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <div class="section-b">
+            <!-- Content for section B goes here -->
+            <div class="column">
+              <label for="expressionInput">Math Expression</label>
+              <input type="text" class="form-control" id="expressionInput" placeholder="Enter Math Expression">
+            </div>
+            <div class="column">
+              <label for="result">Result</label>
+              <input type="text" class="form-control" id="result" readonly>
+            </div>
+            <div class="column">
+              <button class="btn btn-primary" onclick="calculateResult()">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      function calculateResult() {
+        // Get the input value
+        var expressionInput = document.getElementById('expressionInput').value;
+    
+        try {
+          // Evaluate the mathematical expression
+          var result = eval(expressionInput);
+    
+          // Update the result input field
+          document.getElementById('result').value = result;
+        } catch (error) {
+          // Handle any errors that may occur during evaluation
+          alert('Invalid expression. Please enter a valid mathematical expression.');
+        }
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+
+  </body>
+</html>

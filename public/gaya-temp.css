@@ -1,0 +1,7 @@
+.section-a, .section-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* height: 100vh; 100% of the viewport height */
+}

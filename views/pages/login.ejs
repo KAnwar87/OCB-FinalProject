@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../components/head.ejs') %>
+  </head>
+  <body>
+    <div class="container-sm centerwrap">
+      <div class="header contentAlignCenter">
+        <img src="/MERNstackBanner.png" class="img-fluid MERNstackBanner" />
+        <h3 class="textAlignCenter">
+          Online Coding Bootcamp Project <br />by Khairul Anwar
+        </h3>
+      </div>
+
+      <div class="parent contentAlignCenter">
+
+        <div class="EJS_Flash_Message">
+          <% if (messages.length > 0 && key === 'flashRegistrationSuccessful') { %>
+            <div class="flash-messages">
+              <% messages.forEach(message => { %>
+                <div class="col-5 alert alert-success contentAlignCenter" role="alert">
+                  <%= message %>
+                </div>
+              <% }); %>
+            </div>
+          <% } else if (messages.length > 0 && (key === 'flashNoUser' || key === 'flashWrongPassword')) { %>
+            <div class="flash-messages">
+              <% messages.forEach(message => { %>
+                <div class="col-5 alert alert-danger contentAlignCenter" role="alert">
+                  <%= message %>
+                </div>
+              <% }); %>
+            </div>
+          <% } else { %>
+            <!-- Add your blank content or any other logic for the else case -->
+          <% } %>
+        </div> 
+ 
+        <div class="child">
+          <img src="/CodeForLife.png" class="img-fluid CodeForLife" />
+        </div>
+        <div class="child contentAlignCenter login_form">
+          <form class="child" action="/api-login"
+          method="post">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                name="username"
+                placeholder="username"
+                value="kerol"
+                required
+              />
+              <label for="floatingInput">Username</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                placeholder="password"
+                value="password"
+                required
+              />
+              <label for="floatingInput">Password</label>
+            </div>
+            <div class="col">
+              <button
+                type="submit"
+                id="submitButton"
+                class="btn btn-outline-primary"
+              >
+                <i class="bi bi-person-check"></i>
+                Login
+              </button>
+              <a class="btn btn-outline-secondary" href="/register" role="button"><i class="bi bi-pencil-square"></i>
+                Register</a>
+
+            </div>
+            <br />
+            <!-- <span style="color: darkgrey; font-size: small"
+              >Problems signing in?</span
+            > -->
+          </form>
+        </div>
+      </div>
+      <span style="color: silver; font-size: small"
+        >Khairul Anwar bin Zainuddin | 019-400-1148 | khairul87@gmail.com</span
+      >
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="" async defer></script>
+  </body>
+</html>

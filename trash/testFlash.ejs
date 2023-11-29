@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <%- include('../components/head.ejs') %>
+  <body>
+    <%- include('../components/menu.ejs') %>
+    <div>DASHBOARD CONTENT</div>
+
+    <% if (messages && messages.length > 0) { %>
+      <ul>
+        <% messages.forEach(message => { %>
+          <li><%= message %></li>
+        <% }) %>
+      </ul>
+    <% } %>
+
+    <!-- ^^^ SET ALL CONTENT ABOVE THIS LINE ^^^ -->
+    <!-- vvv SET ALL SCRIPT ONLY BELOW THIS LINE vvv -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="" async defer></script>
+    <%- include('../components/footer.ejs') %>
+  </body>
+</html>
