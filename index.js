@@ -23,7 +23,7 @@ app.use(express.static("public"));
 // ### SESSION & FLASH
 app.use(
   session({
-    secret: "katakunci",
+    secret: process.env.EXPRESS_SESSION_SECRET,
     resave: false,
     saveUninitialized: true,
     cookie: { secure: false },

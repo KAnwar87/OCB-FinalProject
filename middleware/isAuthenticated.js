@@ -10,7 +10,7 @@ const isAuthenticated = (req, res, next) => {
     }
 
     // Verify the token from the session
-    const decoded = jwt.verify(sessionToken, "KuNc1-R@h$iA");
+    const decoded = jwt.verify(sessionToken, process.env.JWT_TOKEN);
 
     // Check if the decoded token contains user id
     if (!decoded?.id) {
