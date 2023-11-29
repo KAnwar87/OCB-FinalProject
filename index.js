@@ -1,16 +1,19 @@
+import dotenv from 'dotenv'; 
 import express from "express";
 import session from "express-session";
 import flash from "express-flash";
+import methodOverride from "method-override"
 import path from "path";
 import { dbInit } from "./database/connection.js";
 import apiRoutes from "./routes/apiRoutes.js";
-import methodOverride from "method-override"
 
+// ### .ENV & RUN SERVER
+dotenv.config();
 const app = express();
 const PORT = 3333;
-
 dbInit();
 
+// ### CORS
 import cors from "cors";
 app.use(cors());
 
