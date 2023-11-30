@@ -6,8 +6,7 @@ Saya **Khairul Anwar**, peserta **Online Coding Bootcamp (MERN)** Siri 1 anjuran
 
 >Live Website URL: http://ocb-project.onrender.com/
 >React Page: https://senaraibpa.pages.dev/
-
->Video Link: 
+>Video Link: https://youtu.be/fhNA1jyhPp8
 
 ## Frontend
 
