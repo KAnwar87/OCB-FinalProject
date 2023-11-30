@@ -1,7 +1,7 @@
 {
-  "name": "ocb-final-project",
-  "version": "1.0.0",
-  "description": "Online Coding Bootcamp Final Project by Khairul Anwar bin Zainuddin",
+  "name": "ocb-project",
+  "version": "0.1.0",
+  "description": "Online Coding Bootcamp Project by Khairul Anwar bin Zainuddin",
   "main": "index.js",
   "type": "module",
   "scripts": {

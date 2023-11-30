@@ -130,7 +130,7 @@ const login = async (req, res) => {
     console.timeEnd("loginDuration");
 
     // create access token
-    const token = jwt.sign({ id: userData.id }, process.env.JWT_TOKEN, { expiresIn: 60 * 10 });
+    const token = jwt.sign({ id: userData.id }, process.env.JWT_TOKEN, { expiresIn: 60 * 15 });
 
     // compare password from body with database
     if (isMatch) {
